@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant API</title>
+</head>
+
+<body>
+    <img src="">
+    <h1>Valorant API
+    </h1>
+    <div class="punchline"></div>
+    <div class="jokes"></div>
+
+    <p>Dev by Soo Hwangbo</p>
+
+    <script>
+
+
+        console.log('javascript is working');
+
+        const body = document.querySelector('body');
+        const imgContainer = document.querySelector('img');
+        const jokeDiv = document.querySelector('.jokes');
+        const jokePunchline = document.querySelector(".punchline");
+
+        body.style.textAlign = "center";
+        body.style.width = "500px"
+        body.style.margin = "0 auto 0 auto";
+        imgContainer.style.width = "500px";
+
+
+        // https://dash.valorant-api.com/
+        const agentUrl = 'https://valorant-api.com/v1/agents';
+        const mapUrl = 'https://valorant-api.com/v1/maps';
+        const weaponUrl = 'https://valorant-api.com/v1/weapons';
+
+        function generateAgent() {
+                const jokes = fetch(agentUrl)
+                    .then((response) => response.json())
+                    .then((joke) => {
+                        return joke;
+                    });
+
+                const printJokes = async () => {
+                    const a = await jokes;
+                    jokeDiv.innerHTML = (a.data[4].description);
+                    jokeDiv.style.fontSize = '1.5rem';
+                    jokePunchline.innerHTML = (a.data[4].displayName);
+                    jokePunchline.style.fontSize = '2rem';
+                    imgContainer.src = (a.data[4].displayIcon);
+                    console.log(a);
+                };
+                printJokes();
+            }
+
+            generateAgent()
+
+
+    </script>
+</body>
+
+</html>

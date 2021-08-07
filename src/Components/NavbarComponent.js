@@ -1,17 +1,13 @@
 import React from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap"
-import {
-  BrowserRouter as Router,
-  Link,
-  NavLink
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function MainNavbar() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="danger" variant="dark">
       <Container>
 
-        <Link to="/home">
+        <Link to="/">
           <Navbar.Brand>
             <img
               alt="valorant logo"

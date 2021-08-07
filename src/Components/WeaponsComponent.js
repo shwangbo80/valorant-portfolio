@@ -1,9 +1,11 @@
 import React from 'react';
+import WeaponsApi from './WeaponsApiComponent';
 
 function WeaponsPage() {
   return (
     <div>
-      <h1>Weapons Page</h1>
+      <h1>Weapons</h1>
+      <WeaponsApi />
     </div>
   );
 }
