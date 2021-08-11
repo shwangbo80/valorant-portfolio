@@ -43,6 +43,7 @@ class MapApi extends React.Component {
                         <div key={item.uuid}>
                             <h2>{item.displayName} </h2>
                             <img src={item.splash} />
+                            <img src={item.listViewIcon} />
                             <img src={item.displayIcon} />
                         </div>
                     ))}

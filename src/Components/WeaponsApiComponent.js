@@ -1,5 +1,4 @@
 import React from 'react';
-
 class WeaponsApi extends React.Component {
   constructor(props) {
     super(props);
@@ -40,11 +39,11 @@ class WeaponsApi extends React.Component {
       return (
         <div>
           {items.map(item => (
-            <div key={item.uuid}>
+            <div key={item.defaultSkinUuid}>
               <img src={item.displayIcon} />
               <h2>{item.displayName}</h2>
               <p>{item.category}</p>
-              <img src={item.killStreamIcon} />
+              <img src={item.killStreamIcon} style={{ backgroundColor: "black" }} />
             </div>
           ))}
         </div>

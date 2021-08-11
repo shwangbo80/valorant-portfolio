@@ -1,5 +1,5 @@
 import React from 'react';
-import ApiComponent from './ApiComponent';
+import ApiComponent from './AgentApiComponent';
 
 function AgentsPage() {
   return (
