@@ -7,6 +7,7 @@ import AgentsPage from "./AgentsComponent";
 import MapsPage from "./MapsComponent";
 import WeaponsPage from "./WeaponsComponent";
 import SignupPage from "./SignupComponent";
+import Footer from './Footer';
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -34,7 +35,7 @@ function MainComponent() {
                     <SignupPage />
                 </Route>
             </Switch>
-            <FooterComponent />
+            <Footer />
         </Router >
     );
 }

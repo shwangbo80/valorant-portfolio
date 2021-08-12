@@ -1,26 +1,49 @@
+body { 
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 20px;
+}
+
 .container-fluid {
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
+  padding-right:0;
+  padding-left:0;
+  margin-right:auto;
+  margin-left:auto
+}
+
+.Navbar {
+  padding-right:0;
+  padding-left:0;
+  margin-right:auto;
+  margin-left:auto
+}
+
+.bgContainer {
+  padding-top: 100px;
+  padding-bottom: 200px;
+
 }
 
 .heroImage {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url("https://images.hdqwalls.com/wallpapers/jett-valorant-4k-k4.jpg");
+    url("./Img/hero_main.png");
 
   /* Set a specific height */
-  height: 75vh;
+  height: 90vh;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  padding-top: 300px;
 }
 
 .hero-text {
     color: white;
-    text-shadow: 2px 2px 4px #000000;
 }
 
 .lds-hourglass {
@@ -56,6 +79,255 @@
   }
 }
 
-.pngImg {
-  filter: invert(100%);   
+.valorant_logo {
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+  filter: invert(100%);
 }
+
+.big_header {
+  font-style: italic;
+  font-weight: 800;
+}
+
+.weAreValorantBg {
+  background-image: url(../src/Img/we_are_valorant_bg.png);
+  /* height: 1000px; */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.yourAgentsBg {
+  background-image: url(../src/Img/agents_bg.png);
+  /* height: 1000px; */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.doubleAgentsContainer {
+  text-align: center;
+}
+
+.doubleAgentsImage {
+  text-align: center;
+  height: 900px;
+}
+
+.yourMapsBg {
+  background-image: url(../src/Img/maps_bg.png);
+  /* height: 1000px; */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.videoContainer {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+
+}
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.footerContainer {
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 50px 0 200px 0;
+  font-size: 12px;
+}
+
+.downloadLink {
+  font-size: 16px;
+}
+
+.aboutBg {
+  background-image: url(../src/Img/about_bg.jpeg);
+  /* height: 1000px; */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.aboutContainer {
+  color: white;
+  margin-top: 150px;
+  margin-bottom: 300px;
+}
+
+.aboutFont {
+  font-size: 1.5rem;
+}
+
+.phoenixImg {
+  margin-top: 150px;
+}
+
+.accordionContainer {
+  text-align: left;
+  color: white;
+  padding: 100px 0px;
+}
+
+.headerText {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  color: white;
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px #000000;
+  padding-left: 25px;
+}
+
+.splashImg {
+  width: 100%;
+}
+
+.mapBg {
+  background-image: url(../src/Img/valorant_bg_white.jpeg);
+  padding-top: 350px;
+  height: 700px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.bgHeader {
+  font-size: 10rem;
+  font-weight: 900;
+  font-style: italic;
+  text-align: right;
+}
+
+.displayIconImg {
+  width: 100px;
+  opacity: 0.3;
+}
+
+.displayIconImg:hover {
+  opacity: 1;
+  width: 110px;
+  margin-bottom: -20px;
+  margin-top: -5px;
+  transition: 750ms;
+}
+
+.agentSelectContainer {
+  margin: 300px auto 100px auto;
+  border: 5px #ff4654;
+  border-style: solid;
+  padding: 30px;
+}
+
+.singleAgentContainer {
+  margin: 0 auto 0 auto;
+  width: 140px;
+}
+
+.agentContainer {
+  margin: 100px 0 100px 0;
+}
+
+.fullPortraitImg {
+  width: 160%;
+  position: relative;
+  right: 100px;
+}
+
+.agentInfo {
+  margin: 50px 0 0 0;
+}
+
+.agentTitle {
+  font-size: 5rem;
+  font-weight: 800;
+  font-style: italic;
+  color: #ff4654;
+}
+
+.agentHeader {
+  font-size: 3rem;
+  font-weight: 800;
+  font-style: italic;
+  margin-top: 50px;
+}
+
+.agentDescription {
+  font-size: 1.3rem;
+}
+
+.tab-content {
+  width: 500px;
+}
+
+.nav-tabs {
+  width: 500px;
+  margin-top: 20px;
+}
+
+.abilityContainer {
+  padding: 25px 25px 25px 25px;
+  font-size: 1.3rem;
+}
+
+.abilityIcon {
+  width: 150px;
+  filter: invert(100%);
+}
+
+.abilityIconContainer {
+  padding: 30px;
+  text-align: center;
+}
+
+.signupBg {
+  background-image: url(../src/Img/signup_bg.jpeg);
+  padding-top: 350px;
+  height: 700px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.signinHeader {
+  font-size: 10rem;
+  font-weight: 900;
+  font-style: italic;
+  text-align: right;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  .big_header {
+    font-size: 7rem;
+  }
+}
+
+/* If the screen size is 720px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 720px) {
+    .signinHeader {
+      font-size: 6rem;
+      font-weight: 900;
+      font-style: italic;
+      text-align: right;
+    }
+  } 
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .big_header {
+    font-size: 5rem;
+  }
+  } 

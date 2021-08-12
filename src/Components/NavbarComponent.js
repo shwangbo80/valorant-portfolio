@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function MainNavbar() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="danger" variant="dark">
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
 
         <Link to="/">
@@ -35,15 +35,9 @@ function MainNavbar() {
               </Navbar.Brand>
             </Link>
 
-            <Link to="/Maps">
+            <Link to="/maps">
               <Navbar.Brand className="mx-3">
                 Maps
-              </Navbar.Brand>
-            </Link>
-
-            <Link to="/weapons">
-              <Navbar.Brand className="mx-3">
-                Weapons
               </Navbar.Brand>
             </Link>
 
@@ -51,8 +45,8 @@ function MainNavbar() {
           <Nav>
             <Link to="/signup">
 
-              <Button className="btn btn-dark">
-                Sign Up
+              <Button className="btn-lg btn-danger">
+                SIGN IN
               </Button>
             </Link>
           </Nav>
