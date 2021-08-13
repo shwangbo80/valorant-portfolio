@@ -241,9 +241,10 @@ p {
 }
 
 .fullPortraitImg {
-  width: 160%;
+  width: 140%;
   position: relative;
   right: 100px;
+  bottom: 100px;
 }
 
 .agentInfo {
@@ -268,18 +269,9 @@ p {
   font-size: 1.3rem;
 }
 
-.tab-content {
-  width: 500px;
-}
-
-.nav-tabs {
-  width: 500px;
-  margin-top: 20px;
-}
-
 .abilityContainer {
-  padding: 25px 25px 25px 25px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  width: 75%;
 }
 
 .abilityIcon {

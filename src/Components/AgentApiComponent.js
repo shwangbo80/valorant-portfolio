@@ -6,13 +6,13 @@ import {
     Route,
     Link
 } from "react-router-dom";
+
 import BreachComponent from "./agents/BreachComponent";
 import RazeComponent from "./agents/RazeComponent"
 import KayoComponent from "./agents/KayoComponent";
 import SkyeComponent from "./agents/SkyeComponent";
 import CypherComponent from "./agents/CypherComponent";
-import SovaComponent1 from "./agents/SovaComponent1";
-import SovaComponent2 from "./agents/SovaComponent2";
+import SovaComponent from "./agents/SovaComponent";
 import KilljoyComponent from "./agents/KilljoyComponent";
 import ViperComponent from "./agents/ViperComponent";
 import PhoenixComponent from "./agents/PhoenixComponent";
@@ -24,6 +24,7 @@ import ReynaComponent from "./agents/ReynaCompoent";
 import OmenComponent from "./agents/OmenComponent";
 import JettComponent from "./agents/JettComponent";
 
+import { AGENTSDATA } from "../db/AgentsDb";
 class AgentComponent extends React.Component {
     constructor(props) {
         super(props);
@@ -32,19 +33,19 @@ class AgentComponent extends React.Component {
             isLoaded: false,
             Loading: false,
             items: [],
-            agentId: 0
+            agentId: 0,
+            agentsData: AGENTSDATA,
         };
     }
 
     componentDidMount() {
-        fetch('https://valorant-api.com/v1/agents')
-
-            .then(res => res.json())
+        fetch(AGENTSDATA)
+            .then(res => res)
             .then(
                 (result) => {
                     this.setState({
                         isLoaded: true,
-                        items: result.data
+                        items: result
                     });
                 },
 
@@ -59,6 +60,7 @@ class AgentComponent extends React.Component {
 
     render() {
         const { error, isLoaded, items } = this.state;
+
         if (error) {
             return <div>Error: {error.message}</div>;
         }
@@ -76,7 +78,7 @@ class AgentComponent extends React.Component {
                         </Container>
                         <Container className="agentSelectContainer">
                             <Row>
-                                {items.map(item => (
+                                {this.state.agentsData.map(item => (
                                     <Col xs={2} key={item.uuid} className="singleAgentContainer">
                                         <Link to={`/${item.uuid}`} >
                                             <img src={item.displayIcon} className="displayIconImg py-3" />
@@ -85,8 +87,8 @@ class AgentComponent extends React.Component {
                                 ))}
                             </Row>
                         </Container>
-                        <Switch>
 
+                        <Switch>
                             <Route exact path="/5f8d3a7f-467b-97f3-062c-13acf203c006">
                                 <BreachComponent />
                             </Route>
@@ -103,10 +105,7 @@ class AgentComponent extends React.Component {
                                 <CypherComponent />
                             </Route>
                             <Route exact path="/320b2a48-4d9b-a075-30f1-1f93a9b638fa">
-                                <SovaComponent1 />
-                            </Route>
-                            <Route exact path="/ded3520f-4264-bfed-162d-b080e2abccf9">
-                                <SovaComponent2 />
+                                <SovaComponent />
                             </Route>
                             <Route exact path="/1e58de9c-4950-5125-93e9-a0aee9f98746">
                                 <KilljoyComponent />
@@ -139,12 +138,13 @@ class AgentComponent extends React.Component {
                                 <JettComponent />
                             </Route>
                         </Switch>
-
                     </div>
                 </Router>
-            );
+            )
         }
     }
 }
 
 export default AgentComponent;
+
+
