@@ -16,7 +16,7 @@ function YourMaps() {
                     <Row>
                         <Col md={6} >
                             <div className="videoContainer">
-                                <iframe width="510px" height="300px" src="https://www.youtube.com/embed/EB4vFzY3MWc?playlist=zRxGS1RhWKk;controls=0&amp;start=48&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className="video"></iframe>
+                                <iframe width="510px" height="300px" src="https://www.youtube.com/embed/zRxGS1RhWKk?playlist=zRxGS1RhWKk;controls=0&amp;start=48&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className="video"></iframe>
                             </div>
                         </Col>
                         <Col md={6}>

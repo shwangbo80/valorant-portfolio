@@ -23,18 +23,18 @@ p {
 .bgContainer {
   padding-top: 100px;
   padding-bottom: 200px;
+}
 
+.heroContainer {
+  position: relative;
+  left: auto;
+  right: auto;
 }
 
 .heroImage {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url("./Img/hero_main.png");
-
-  /* Set a specific height */
-  height: 90vh;
-
-  /* Position and center the image to scale nicely on all screens */
+    url("./Img/hero_main3.jpeg");
+  height: 96vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,6 +44,15 @@ p {
 
 .hero-text {
     color: white;
+}
+
+.playFreeBtn {
+  background-color: black;
+  color: white;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-size:40px
 }
 
 .lds-hourglass {
@@ -80,9 +89,8 @@ p {
 }
 
 .valorant_logo {
-  -webkit-filter: drop-shadow(5px 5px 5px #222);
-  filter: drop-shadow(5px 5px 5px #222);
   filter: invert(100%);
+  padding: 50px 0;
 }
 
 .big_header {
@@ -116,7 +124,7 @@ p {
 }
 
 .yourMapsBg {
-  background-image: url(../src/Img/maps_bg.png);
+  background-image: url(../src/Img/maps_bg.jpeg);
   /* height: 1000px; */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -193,6 +201,15 @@ p {
 
 .splashImg {
   width: 100%;
+}
+
+.agentBg {
+  background-image: url(../src/Img/valorant_bg_white.jpeg);
+  padding-top: 350px;
+  height: 700px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .mapBg {

@@ -73,7 +73,7 @@ class AgentComponent extends React.Component {
             return (
                 <Router>
                     <div>
-                        <Container className="mapBg bgContainer">
+                        <Container className="agentBg bgContainer">
                             <h1 className="bgHeader my-5 py-5 text-dark">AGENTS</h1>
                         </Container>
                         <Container className="agentSelectContainer">

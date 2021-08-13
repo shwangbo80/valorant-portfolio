@@ -4,13 +4,15 @@ import logo from '../Img/valorant_logo_long.png'
 
 function Hero() {
   return (
-    <Container fluid className="heroImage bgContainer">
-      <Row>
+    <Container fluid className="heroImage">
+      <Row className="heroContainer">
         <div className="d-flex align-items-center justify-content-center">
           <Container className="text-center">
             <h1 className="text-light hero-text">A 5v5 character-based tactical shooter</h1>
             <Image src={logo} className="pngImg valorant_logo" fluid />
-            <Button size="lg" style={{ fontSize: 20 }}>PLAY FREE</Button>
+            <a>
+              <div className="playFreeBtn" size="lg">PLAY FREE</div>
+            </a>
           </Container>
         </div>
       </Row>
