@@ -7,10 +7,12 @@ import MapsPage from "./MapsComponent";
 import SignupPage from "./SignupComponent";
 import Footer from './Footer';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ScrollToTop from './ScrollToTop';
 
 function MainComponent() {
     return (
         <Router>
+            <ScrollToTop />
             <MainNavbar />
             <Switch>
                 <Route exact path="/">

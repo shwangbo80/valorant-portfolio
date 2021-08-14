@@ -20,11 +20,7 @@ function CreatorsComponent() {
                                 <h1 className="big_header my-5 py-5 text-white">CREATORS UNITED</h1>
                             </Col>
                         </Row>
-                        <Row>
-                            <Col md={12}>
-                                <h1 className="text-white">FEATURED CONTENT CREATORS</h1>
-                            </Col>
-                        </Row>
+
                         <Row className="mt-5">
                             <Col md={6}>
                                 <div className="videoContainer">
@@ -38,17 +34,22 @@ function CreatorsComponent() {
                             </Col>
 
                         </Row>
-                        <Row className="mt-5">
+                        <Row>
+                            <Col md={12}>
+                                <h1 className="text-white my-5 pt-5">FEATURED CONTENT CREATORS</h1>
+                            </Col>
+                        </Row>
+                        <Row className="mt-2">
                             <Col md={4}>
-                                <Image src={creatorImg1} fluid className="creatorImg pt-5"></Image>
+                                <Image src={creatorImg1} fluid className="creatorImg"></Image>
                                 <h1 className="text-light text-center mt-3">Jack</h1>
                             </Col>
                             <Col md={4}>
-                                <Image src={creatorImg2} fluid className="creatorImg pt-5"></Image>
+                                <Image src={creatorImg2} fluid className="creatorImg"></Image>
                                 <h1 className="text-light text-center mt-3">Laura</h1>
                             </Col>
                             <Col md={4}>
-                                <Image src={creatorImg3} fluid className="creatorImg pt-5"></Image>
+                                <Image src={creatorImg3} fluid className="creatorImg"></Image>
                                 <h1 className="text-light text-center mt-3">Kathy</h1>
                             </Col>
 

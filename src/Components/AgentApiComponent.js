@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from 'react-bootstrap';
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Switch,
     Route,
     Link
@@ -89,10 +89,10 @@ class AgentComponent extends React.Component {
                         </Container>
 
                         <Switch>
-                            <Route path={"/5f8d3a7f-467b-97f3-062c-13acf203c006"}>
+                            <Route exact path={`/5f8d3a7f-467b-97f3-062c-13acf203c006`}>
                                 <BreachComponent />
                             </Route>
-                            <Route path={"/f94c3b30-42be-e959-889c-5aa313dba261"}>
+                            <Route exact path={"/f94c3b30-42be-e959-889c-5aa313dba261"}>
                                 <RazeComponent />
                             </Route>
                             <Route exact path="/601dbbe7-43ce-be57-2a40-4abd24953621">
@@ -138,6 +138,7 @@ class AgentComponent extends React.Component {
                                 <JettComponent />
                             </Route>
                         </Switch>
+
                     </div>
                 </Router>
             )
