@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+#VALORANT portfolio app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To start, run "yarn start" in the root folder.
 
-## Available Scripts
+This is a portfoiio project for Nucamp React course.
 
-In the project directory, you can run:
+Valorant is a trendy game made by Riot games. It has a very large player base, and lots of content is available for me to use, and this was perfect, because I wanted to make a stylish website with rich content, 
 
-### `yarn start`
+Designing the website was not difficult, because of my design background. What made this tough was that this was first React app I built on my own, after 5 weeks of class at Nucamp. The task was daunting, but as I set up the all the components one by one, and connected them with routes, the repetitive muscle memory kicked in and it was not so bad in the end. Still there were some bugs that I had to do research on and fix.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Beta version of the website used public Api from https://valorant-api.com/. The Api had loads of content, and it did not require an api key, so it was very easy to use. But after 1 day of use "and hundreds of calls for testing..." the server blocked me with CORS policy, and I was not able to fetch images. This lead me to fetching all the images manually to my local folder, and linking the images to there. Thankfully, the text data form JSON still worked, so that made it a little less tedious.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+2. On the agent select screen, after the agent is selected, when I tried to go back a page or refresh, the agent compent did not render, resulting in just the navbar and footer showing. The problem was that this was a router inside a router, and it had to use HashRouter instead of BrowserRouter, both imported from React Router.
 
-### `yarn test`
+3. when trying to deploy to netlify, it gave me an red error when trying to build from github repo. This was fixed by changing build command from "yarn build" to "CI= npm run build" in settings.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. When delopyed to netlify, there was an 404 error everytime I refreshed a page. Thanks to Stack OVerflow community, I found out that this is easily fixed by making a netlify.toml file in my root folder with below code pasted inside.
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+//
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 200
+//
