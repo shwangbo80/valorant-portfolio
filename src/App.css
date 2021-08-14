@@ -120,7 +120,8 @@ p {
 
 .doubleAgentsImage {
   text-align: center;
-  height: 900px;
+  /* width: auto;
+  height: 900px; */
 }
 
 .yourMapsBg {
@@ -359,6 +360,24 @@ p {
   }
 }
 
+@media screen and (max-width: 990px) {
+  .yourAgents_header {
+    font-size: 6rem;
+    font-weight: 900;
+    font-style: italic;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .yourAgents_header {
+    font-size: 5rem;
+    font-weight: 900;
+    font-style: italic;
+    text-align: left;
+  }
+}
+
 /* If the screen size is 720px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 720px) {
     .signinHeader {
@@ -373,6 +392,17 @@ p {
       font-weight: 900;
       font-style: italic;
       text-align: right;
+    }
+
+    .yourAgents_header {
+      font-size: 6rem;
+      font-weight: 900;
+      font-style: italic;
+      text-align: left;
+    }
+
+    .aboutContainer {
+      margin-top: -75px;
     }
 
     .agentSelectContainer {

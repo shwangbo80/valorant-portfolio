@@ -32,7 +32,7 @@ class MapApi extends React.Component {
     }
 
     render() {
-        const { error, isLoaded, items } = this.state;
+        const { error, isLoaded } = this.state;
         if (error) {
             return <div>Error: {error.message}</div>;
         }
@@ -51,85 +51,85 @@ class MapApi extends React.Component {
                         <Accordion eventKey="0" flush>
                             <Accordion.Item eventKey="0">
                                 <Accordion.Header className="accordionHeaderContainer">
-                                    <img src={MAPSDATA[0].listViewIcon} className="listViewIcon" />
+                                    <img src={MAPSDATA[0].listViewIcon} className="listViewIcon" alt={MAPSDATA[0].displayName} />
                                     <div className="headerText">
                                         {MAPSDATA[0].displayName}
                                     </div>
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                    <img src={MAPSDATA[0].displayIcon} />
+                                    <img src={MAPSDATA[0].displayIcon} alt={MAPSDATA[0].displayName} />
                                 </Accordion.Body>
                             </Accordion.Item>
 
                             <Accordion.Item eventKey="1">
                                 <Accordion.Header className="accordionHeaderContainer">
-                                    <img src={MAPSDATA[1].listViewIcon} />
+                                    <img src={MAPSDATA[1].listViewIcon} alt={MAPSDATA[1].displayName} />
                                     <div className="headerText">
                                         {MAPSDATA[1].displayName}
                                     </div>
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                    <img src={MAPSDATA[1].displayIcon} />
+                                    <img src={MAPSDATA[1].displayIcon} alt={MAPSDATA[1].displayName} />
                                 </Accordion.Body>
                             </Accordion.Item>
 
                             <Accordion.Item eventKey="2">
                                 <Accordion.Header className="accordionHeaderContainer">
-                                    <img src={MAPSDATA[2].listViewIcon} />
+                                    <img src={MAPSDATA[2].listViewIcon} alt={MAPSDATA[2].displayName} />
                                     <div className="headerText">
                                         {MAPSDATA[2].displayName}
                                     </div>
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                    <img src={MAPSDATA[2].displayIcon} />
+                                    <img src={MAPSDATA[2].displayIcon} alt={MAPSDATA[2].displayName} />
                                 </Accordion.Body>
                             </Accordion.Item>
 
                             <Accordion.Item eventKey="3">
                                 <Accordion.Header className="accordionHeaderContainer">
-                                    <img src={MAPSDATA[3].listViewIcon} />
+                                    <img src={MAPSDATA[3].listViewIcon} alt={MAPSDATA[3].displayName} />
                                     <div className="headerText">
                                         {MAPSDATA[3].displayName}
                                     </div>
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                    <img src={MAPSDATA[3].displayIcon} />
+                                    <img src={MAPSDATA[3].displayIcon} alt={MAPSDATA[3].displayName} />
                                 </Accordion.Body>
                             </Accordion.Item>
 
                             <Accordion.Item eventKey="4">
                                 <Accordion.Header className="accordionHeaderContainer">
-                                    <img src={MAPSDATA[4].listViewIcon} />
+                                    <img src={MAPSDATA[4].listViewIcon} alt={MAPSDATA[4].displayName} />
                                     <div className="headerText">
                                         {MAPSDATA[4].displayName}
                                     </div>
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                    <img src={MAPSDATA[4].displayIcon} />
+                                    <img src={MAPSDATA[4].displayIcon} alt={MAPSDATA[4].displayName} />
                                 </Accordion.Body>
                             </Accordion.Item>
 
                             <Accordion.Item eventKey="5">
                                 <Accordion.Header className="accordionHeaderContainer">
-                                    <img src={MAPSDATA[5].listViewIcon} />
+                                    <img src={MAPSDATA[5].listViewIcon} alt={MAPSDATA[5].displayName} />
                                     <div className="headerText">
                                         {MAPSDATA[5].displayName}
                                     </div>
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                    <img src={MAPSDATA[5].displayIcon} className="splashImg" />
+                                    <img src={MAPSDATA[5].displayIcon} className="splashImg" alt={MAPSDATA[5].displayName} />
                                 </Accordion.Body>
                             </Accordion.Item>
 
                             <Accordion.Item eventKey="6">
                                 <Accordion.Header className="accordionHeaderContainer">
-                                    <img src={MAPSDATA[6].listViewIcon} />
+                                    <img src={MAPSDATA[6].listViewIcon} alt={MAPSDATA[6].displayName} />
                                     <div className="headerText">
                                         {MAPSDATA[6].displayName}
                                     </div>
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                    <img src={MAPSDATA[6].displayIcon} />
+                                    <img src={MAPSDATA[6].displayIcon} alt={MAPSDATA[6].displayName} />
                                 </Accordion.Body>
                             </Accordion.Item>
                         </Accordion>

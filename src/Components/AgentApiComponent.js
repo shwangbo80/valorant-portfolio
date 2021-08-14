@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Tab, Tabs } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import {
     BrowserRouter as Router,
     Switch,
@@ -25,10 +25,6 @@ import OmenComponent from "./agents/OmenComponent";
 import JettComponent from "./agents/JettComponent";
 
 import { AGENTSDATA } from "../db/AgentsDb";
-
-
-
-
 class AgentComponent extends React.Component {
     constructor(props) {
         super(props);
@@ -63,7 +59,7 @@ class AgentComponent extends React.Component {
     }
 
     render() {
-        const { error, isLoaded, items } = this.state;
+        const { error, isLoaded } = this.state;
 
         if (error) {
             return <div>Error: {error.message}</div>;
@@ -84,8 +80,8 @@ class AgentComponent extends React.Component {
                             <Row>
                                 {this.state.agentsData.map(item => (
                                     <Col xs={2} key={item.uuid} className="singleAgentContainer">
-                                        <Link to={`${item.uuid}`} >
-                                            <img src={item.displayIcon} className="displayIconImg py-3" />
+                                        <Link to={`/${item.uuid}`} >
+                                            <img src={item.displayIcon} alt={item.displayIcon} className="displayIconImg py-3" />
                                         </Link>
                                     </Col>
                                 ))}

@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col, Tab, Tabs } from 'react-bootstrap';
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { FadeTransform, Fade } from 'react-animation-components';
 
 import { AGENTSDATA } from "../../db/AgentsDb";
@@ -21,7 +20,7 @@ class OmenComponent extends React.Component {
                         <Col md={6}>
                             <FadeTransform in transformProps={{ exitTransform: 'translateX(-50%)' }}>
                                 <Fade in>
-                                    <img src={AGENTSDATA[this.state.agentId].fullPortrait} className="fullPortraitImg" />
+                                    <img src={AGENTSDATA[this.state.agentId].fullPortrait} className="fullPortraitImg" alt="Omen full portrait" />
                                 </Fade>
                             </FadeTransform>
 

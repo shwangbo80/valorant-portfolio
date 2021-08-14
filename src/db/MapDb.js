@@ -38,7 +38,6 @@ export const MAPSDATA = [
         "uuid": "ee613ee9-28b7-4beb-9666-08db13bb2244",
         "displayName": "The Range",
         "coordinates": "45°26'FF'N,12°20'Q'E",
-        "displayIcon": null,
         "displayIcon": "img/maps/Range-display.png",
         "listViewIcon": "img/maps/Range-list.png",
     },

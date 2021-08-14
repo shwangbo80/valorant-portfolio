@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Image } from "react-bootstrap"
 import phoenix from "../Img/valorant_phonenix.png"
-import valorantRedLogo from '../Img/valorant_red.png'
 
 function AboutPage() {
   return (
