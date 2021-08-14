@@ -1,5 +1,6 @@
 #VALORANT portfolio app
 
+Run "Yarn install" to install all dependencies.
 To start, run "yarn start" in the root folder.
 
 This is a portfoiio project for Nucamp React course.
@@ -20,5 +21,3 @@ Designing the website was not difficult, because of my design background. What m
   from = "/*"
   to = "/"
   status = 200
-
-
