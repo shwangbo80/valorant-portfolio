@@ -25,6 +25,10 @@ import OmenComponent from "./agents/OmenComponent";
 import JettComponent from "./agents/JettComponent";
 
 import { AGENTSDATA } from "../db/AgentsDb";
+
+
+
+
 class AgentComponent extends React.Component {
     constructor(props) {
         super(props);
@@ -80,7 +84,7 @@ class AgentComponent extends React.Component {
                             <Row>
                                 {this.state.agentsData.map(item => (
                                     <Col xs={2} key={item.uuid} className="singleAgentContainer">
-                                        <Link to={`/${item.uuid}`} >
+                                        <Link to={`${item.uuid}`} >
                                             <img src={item.displayIcon} className="displayIconImg py-3" />
                                         </Link>
                                     </Col>
@@ -89,10 +93,10 @@ class AgentComponent extends React.Component {
                         </Container>
 
                         <Switch>
-                            <Route exact path="/5f8d3a7f-467b-97f3-062c-13acf203c006">
+                            <Route path={"/5f8d3a7f-467b-97f3-062c-13acf203c006"}>
                                 <BreachComponent />
                             </Route>
-                            <Route exact path="/f94c3b30-42be-e959-889c-5aa313dba261">
+                            <Route path={"/f94c3b30-42be-e959-889c-5aa313dba261"}>
                                 <RazeComponent />
                             </Route>
                             <Route exact path="/601dbbe7-43ce-be57-2a40-4abd24953621">
