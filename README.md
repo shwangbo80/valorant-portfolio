@@ -16,9 +16,9 @@ Designing the website was not difficult, because of my design background. What m
 
 4. When delopyed to netlify, there was an 404 error everytime I refreshed a page. Thanks to Stack OVerflow community, I found out that this is easily fixed by making a netlify.toml file in my root folder with below code pasted inside.
 
-//
 [[redirects]]
   from = "/*"
   to = "/"
   status = 200
-//
+
+
