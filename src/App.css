@@ -6,6 +6,16 @@ p {
   font-size: 20px;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color:#00A0C6; 
+  text-decoration:none; 
+  cursor:pointer;  
+}
+
 .container-fluid {
   padding-right:0;
   padding-left:0;

@@ -12,7 +12,7 @@ function Footer() {
                     <Container>
                         <Row>
                             <Col className="my-3">
-                                <a href="https://playvalorant.com/en-us/" className="downloadLink">DOWNLOAD GAME CLIENT</a>
+                                <a href="https://playvalorant.com/en-us/" className="downloadLink"><h4 className="text-white mb-4">DOWNLOAD GAME CLIENT</h4></a>
                             </Col>
                         </Row>
                         <Row>
